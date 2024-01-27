@@ -1,0 +1,536 @@
+/*
+1. reset css
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+:root {
+    --color-white: #fff;
+    --color-blue-lighter: #f4f9fc;
+    --color-grey: #ddd;
+    --color-red: #ff324d;
+    --color-black: #212529;
+    --color-yellow: #f6bc3e;
+    --color-green: #388e3c;
+    --color-grey-lighter: #687188;
+}
+
+/*
+2. config mac dinh css dua tren tinh chat thua huong
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+/* Cac buoc style */
+/*
+1. layout (dinh vi cac phan tu dung vi tri tren web)
+*/
+
+/*
+2. style chi tiet tung phan
+*/
+
+/*
+3. Style phan lon truoc (box model)
+*/
+
+/*
+4. style chi tiet text (style text)
+*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding: 0 10px;
+}
+
+header {
+    padding: 13px 0;
+    background: var(--color-white);
+}
+
+/* ======== Style header */
+.page-link li a.active {
+    color: var(--color-red);
+
+}
+
+header {
+    padding: 10px;
+    background: var(--color-white);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-right {
+    display: flex;
+}
+
+.menu-right .page-link {
+    display: flex;
+}
+
+.menu-right .search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+
+/* style image logo */
+.logo a {
+    display: block;
+    width: 182px;
+}
+
+.logo a img {
+
+}
+
+/* style tung phan menu ben phai */
+.page-link li a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--color-black);
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.page-link li a:hover {
+    color: var(--color-red);
+
+}
+
+.search li i {
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.5s;
+
+}
+
+.search li i:hover {
+    cursor: pointer;
+    color: var(--color-red);
+}
+
+/* ======== Style header */
+
+/* Style banner */
+
+.banner-full {
+    background: var(--color-blue-lighter);
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner .image {
+    width: 40%;
+}
+
+.banner .content {
+    width: calc(60% - 100px);
+    margin-left: 100px;
+
+}
+
+.banner .image img {
+    vertical-align: middle;
+}
+
+.banner .content span {
+    display: inline-block;
+    color: var(--color-red);
+    margin-bottom: 12px;
+}
+
+.banner .content h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.banner .content h5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 34px;
+}
+
+.btn-warning {
+    background: var(--color-red);
+    color: var(--color-white);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--color-red);
+}
+
+.banner .content a:hover {
+    background: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+
+/* Style Product */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.product-list .product-item {
+    width: calc(25% - 24px);
+    margin-left: 24px;
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.1);
+    margin-bottom: 27px;
+}
+
+.product-list .product-item img {
+}
+
+.product-full h2 {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.product-list .product-info {
+    padding: 16px;
+}
+
+.product-list .product-info h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-list .product-info h5:hover {
+    cursor: pointer;
+    color: var(--color-red);
+}
+
+.product-info .price-info span {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.product-info .price-info span:first-child {
+    color: var(--color-red);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-info .price-info span:nth-child(2) {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.product-info .price-info span:last-child {
+    font-size: 14px;
+    color: var(--color-green);
+}
+
+.product-info .product-star {
+    margin-top: 8px;
+}
+
+.product-info .product-star i {
+    color: var(--color-yellow);
+    font-size: 14px;
+}
+
+.product-list .product-item .image {
+    position: relative;
+}
+
+.product-list .product-item .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.product-list .product-item:hover .image::before {
+    opacity: 1;
+}
+
+/* Style Services*/
+.service-full {
+    margin: 50px 0;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.services .service-item::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    top: 15%;
+    bottom: 15%;
+    background: #CCCCCC;
+}
+
+.services .service-item:last-child::before {
+    content: normal;
+}
+
+.services .service-item {
+    width: 33.333%;
+    padding: 0 40px;
+    position: relative;
+}
+
+.services .service-item .image span {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.services .service-item h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+/* Style Subscribe */
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.subscribe .subscribe-title {
+    width: 50%;
+}
+
+.subscribe form {
+    width: 50%;
+    position: relative;
+}
+
+.subscribe form input {
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 18px 16px;
+    font-size: 16px;
+}
+
+.subscribe form input:focus {
+    outline: none;
+}
+
+.subscribe form button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 18px 38px 17px;
+    display: inline-block;
+    background: var(--color-black);
+    color: var(--color-white);
+    margin-top: -1px;
+    font-size: 16px;
+}
+
+.subscribe form button:hover {
+    cursor: pointer;
+}
+
+.subscribe-full {
+    background: var(--color-red);
+    padding: 50px 0;
+}
+
+.subscribe-full h3 {
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Style Footer */
+.footer-top-full {
+    background: var(--color-black);
+    padding: 100px;
+}
+
+.footer-top-full a, .footer-top-full span, .footer-top-full p, .footer-top-full i, h6 {
+    color: var(--color-white);
+}
+
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    padding-right: 20px;;
+}
+
+.social-link ul {
+    display: flex;
+}
+
+.social-link, .contact-info {
+    width: 25%;
+}
+
+.useful-links, .category, .my-account {
+    width: 16.667%;
+}
+
+.social-link image {
+    vertical-align: middle;
+}
+
+.social-link a {
+    display: inline-block;
+    margin-bottom: 26px;
+}
+
+.social-link p {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.social-link ul li i {
+    display: inline-block;
+    padding: 8px;
+}
+
+.social-link ul li i:hover {
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+.useful-links ul li, .category ul li, .my-account ul li, .contact-info ul li {
+    margin-bottom: 16px;
+}
+
+.useful-links h6, .category h6, .my-account h6, .contact-info h6 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.footer-top-full a, .footer-top-full span, .footer-top-full p {
+    font-size: 14px;
+}
+
+.footer-top-full span {
+    line-height: 1.8;
+}
+
+/* Style responsive */
+
+@media screen and (max-width: 400px){
+    .container {
+        /*max-width: 400px;*/
+    }
+    .container .row > * {
+        width: 100%;
+    }
+
+    .menu-right .page-link {
+        display: none;
+    }
+
+    .banner .content {
+        margin-left: 0;
+        text-align: center;
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .banner .image {
+        order: 2;
+    }
+
+    .services .service-item::before {
+        content: normal;
+    }
+
+    .subscribe-full h3 {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+
+    .useful-links h6 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .product-full h2 {
+        margin: 20px 0;
+        font-size: 22px;
+    }
+
+    .banner .content h2 {
+        font-size: 22px;
+    }
+}
+
+/*@media screen and  (max-width: 578px){*/
+/*    .container .row > * {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .menu-right .page-link {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .product-list .product-item {*/
+/*        width: calc(50% - 25px);*/
+/*    }*/
+
+/*}*/
+
